@@ -1,0 +1,151 @@
+:root {
+    --dark-blue: #161B21;
+    --dark-gray: #2B323C;
+    --yellow: #FFBF46;
+    --green: #0EBE98;
+    --gray: #CAD1DA;
+    --light-gray: #F1F5F9;
+    --text-gray: #5D656F;
+    --white-text: #CAD1DA;
+    --text-dark-gray: #83868B;
+    --text-nav: #FDFDFD;
+  }
+
+.search {
+    color: var(--text-gray);
+}
+
+.phone {
+    color: var(--white-text);
+}
+
+.call {
+    color: var(--text-dark-gray);
+}
+
+.nav {
+    color: var(--text-nav);
+}
+
+.header {
+    background-color: var(--dark-blue);
+}
+
+.header1 {
+    background-color: var(--dark-gray);
+}
+
+.promo {
+    background-color: var(--yellow);
+}
+
+.stock {
+    color: var(--green);
+}
+
+.saving {
+    color: var(--yellow);
+}
+
+.warranty {
+    color:  var(--yellow);
+}
+
+.cart {
+    color: var(--gray);
+}
+
+.box {
+    width: 95%;
+}
+.pipe{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.in-stock{
+    margin-left: 2px;
+    border-radius: 50%;
+    background-color: var(--green);
+    top:2px;
+}
+.share-icon{
+    margin-right: 8px;
+}
+.check-icon{
+    top:-2px;
+}
+.warranty-holder{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(45,57,67);
+    background: linear-gradient(90deg, rgba(45,57,67,1) 0%, rgba(41,50,61,1) 21%, rgba(54,67,81,1) 46%, rgba(57,72,87,1) 75%, rgba(45,57,67,1) 100%);
+}
+
+.slides { 
+    height:300px;
+}
+
+.slide {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+    object-fit: cover;
+  }
+  
+  .slide.active {
+    display: flex;
+    opacity: 1;
+  }
+  
+  
+  .slider {
+    margin: 0 auto;
+    position: relative;
+  }
+  .frame{
+    max-height: 700px;
+    overflow: hidden;
+  }
+.product-image{
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0 auto;
+}
+.controls{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top:47%;
+}
+
+.slide {
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    font-size: 3rem;
+    text-align: center;
+    background-color: var(--light-gray);
+
+}
+
+.prev, .next {
+    height: 2rem;
+    border: 0;
+}
+ .fixed-size{
+    flex-shrink: 0;
+ }
+ 
+/* Media queries */
+ @media only screen and (max-width: 1055px) {
+    .warranty-holder{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .box{
+        width: 100%;
+    }
+}

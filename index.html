@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" href="style.css" />
+      <title>front-end-task</title>
+   </head>
+   <body>
+      <section class="w-full min-h-screen">
+         <!-- HEADER -->
+         <div class="w-full h-auto lg:h-32 header">
+            <div class="flex flex-col lg:flex-row justify-between">
+               <div class="fixed-size">
+                  <img class="pt-8 pl-5" src="icons/Sony-icon.svg" alt="sony center logo">
+               </div>
+               <div class="px-5 lg:px-0 max-w-96">
+                  <div class="flex flex-row border-b pb-3">
+                     <img class="pt-9 pb-5 md:pb-0" src="icons/search-icon.svg" alt="search">
+                     <input class="w-full pt-11 pb-5 md:pb-0 pl-5 text-base search bg-transparent focus:outline-none" placeholder="Търси">
+                  </div>
+               </div>
+               <div class="pl-5 md:pl-5 pt-9 flex flex-col md:flex-row">
+                  <div class="flex flex-col pr-14">
+                     <div class="flex flex-row">
+                        <div class="fixed-size">
+                           <img class="pt-2" src="icons/phone-icon.svg" alt="phone icon">
+                        </div>
+                        <span class="pl-2 text-2xl phone cursor-pointer">02 986 3733</span>
+                     </div>
+                     <span class="text-sm call">Консултация по телефон</span>
+                  </div>
+                  <div class="py-5 lg:py-0 flex flex-row fixed-size">
+                     <img class="cursor-pointer" src="icons/person.svg">
+                     <img class="cursor-pointer pl-2 pr-5" src="icons/cart.svg">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- NAVIGATION -->
+         <div class="hidden lg:block w-full py-5 header1">
+            <div class="flex justify-between px-5">
+               <div class="flex flex-row justify-center content-center">
+                  <div class="fixed-size">
+                     <img class="hidden lg:block" src="icons/star-icon.svg" alt="star icon">
+                  </div>
+                  <a href="https://www.google.com/" target="_blank" class="pl-1 text-xs xl:text-base nav">НОВО</a>
+               </div>
+               <div class="flex flex-row justify-center content-center">
+                  <div class="fixed-size">
+                     <img class="hidden lg:block" src="icons/promo-icon.svg" alt="star icon">
+                  </div>
+                  <a href="https://www.google.com/" target="_blank" class="pl-1 text-xs xl:text-base nav">ПРОМОЦИИ</a>
+               </div>
+               <a href="https://www.google.com/" target="_blank" class="text-xs xl:text-base nav">Телевизори</a>
+               <a href="https://www.google.com/" target="_blank" class="text-xs xl:text-base nav">Домашно кино</a>
+               <a href="https://www.google.com/" target="_blank" class="text-xs xl:text-base nav">Фотоапарати и Обективи</a>
+               <a href="https://www.google.com/" target="_blank" class="text-xs xl:text-base nav">Видеокамери</a>
+               <a href="https://www.google.com/" target="_blank" class="text-xs xl:text-base nav">Professional</a>
+               <a href="https://www.google.com/" target="_blank" class="text-xs xl:text-base nav">Аудио</a>
+               <a href="https://www.google.com/" target="_blank" class="text-xs xl:text-base nav">Playstation</a>
+               <a href="https://www.google.com/" target="_blank" class="text-xs xl:text-base nav">Мобилни телефони</a>
+               <a href="https://www.google.com/" target="_blank" class="text-xs xl:text-base nav">Ааксесоари</a>
+            </div>
+         </div>
+         <!-- NAVIGATION END-->
+         <div class="w-full h-14 flex flex-row pt-5">
+            <span class="pl-5 md:pl-16 text-xs gray-300">Телевизори</span>
+            <span class="pl-6 text-xs gray-300">Sony BRAVIA XR MASTER Series A90J</span>
+         </div>
+         <div class="wrapper flex flex-col md:flex-row">
+            <!-- LEFT SECTION-->
+            <div class="w-full md:w-1/2 md:h-screen overflow-hidden">
+               <div class="flex flex-row">  
+                  <!-- IMAGE THUMBS -->
+                  <div class="hidden md:block flex flex-col px-3">
+                     <div class="w-20 h-20 overflow-hidden">
+                        <img data-number="0" class="preview-image" src="https://www.outsideonline.com/wp-content/uploads/2021/04/17/dog_head_square.jpg?crop=1:1&width=600&enable=upscale&quality=100" alt="dog">
+                     </div>
+                     <div class="w-20 h-20 mt-5 overflow-hidden">
+                        <img data-number="1" class="preview-image" src="https://people.com/thmb/m_fKur3LRPF4qlDwBAd0PBFNHSQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2)/bacon-the-dog-1-1-2000-665624bf445a4eeab2ee4b6f59dbd7e2.jpg" alt="cute dog">
+                     </div>
+                     <div class="w-20 h-20 mt-5 overflow-hidden">
+                        <img data-number="2" class="preview-image" src="https://ringwoodvetemergency.com.au/wp-content/uploads/2020/10/Spring-Dog-1-1-1024x1024.jpg" alt="flower dog">
+                     </div>
+                     <div class="w-20 h-20 mt-5 overflow-hidden">
+                        <img data-number="3" class="preview-image" src="https://images.pexels.com/photos/8495992/pexels-photo-8495992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+                     </div>
+                  </div>
+                  <!-- MEDIA -->
+                  <div class="w-full">
+                     <div class="slider">
+                        <div class="slides">
+                           <ul class="frame">
+                              <li class="slide active">
+                                 <img class="product-image" src="https://www.outsideonline.com/wp-content/uploads/2021/04/17/dog_head_square.jpg?crop=1:1&width=600&enable=upscale&quality=100" alt="dog">
+                              </li>
+                              <li class="slide">
+                                 <img class="product-image" src="https://people.com/thmb/m_fKur3LRPF4qlDwBAd0PBFNHSQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2)/bacon-the-dog-1-1-2000-665624bf445a4eeab2ee4b6f59dbd7e2.jpg" alt="cute dog">
+                              </li>
+                              <li class="slide">
+                                 <img class="product-image" src="https://ringwoodvetemergency.com.au/wp-content/uploads/2020/10/Spring-Dog-1-1-1024x1024.jpg" alt="flower dog">
+                              </li>
+                              <li class="slide">
+                                 <img class="product-image" src="https://images.pexels.com/photos/8495992/pexels-photo-8495992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="dog with glasses">
+                              </li>
+                           </ul>
+                        </div>
+                        <!-- CONTROLS -->
+                        <div class="controls">
+                           <button class="prev">
+                           <img src="icons/arrow-left.svg"/>
+                           </button>
+                           <button class="next">
+                           <img src="icons/arrow-right.svg"/>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- LEFT SECTION END-->
+            <!-- RIGHT SECTION -->
+            <div class="w-full md:w-1/2 h-screen md:pl-3 px-5 md:px-0">
+               <div class="md:w-4/5">
+                  <div class="flex flex-col md:flex-row pt-5 md:pt-0">
+                     <div>
+                        <div class="w-40 rounded-full promo">
+                           <span class="text-xs text-black text-center flex justify-center py-1">Онлайн промоция</span>
+                        </div>
+                     </div>
+                     <p class="text-xs text-slate-700 md:pl-10 pt-3 md:pt-0">
+                        Офертата е валидна от 21.06.2021 до 14.07.2021
+                     </p>
+                  </div>
+                  <div class="pt-5">
+                     <!-- MAIN TITLE -->
+                     <h2 class="text-2xl text-black">
+                        Телевизор Sony BRAVIA XR MASTER Series A90J 65'
+                     </h2>
+                     <h3 class="pt-5 text-slate-800 border-b border-slate-500 pb-5">
+                        A90J | BRAVIA XR | MASTER Series | OLED | 4K Ultra HD | Висок
+                        динамичен обхват <br />
+                        (HDR) | Smart TV (Google TV)
+                     </h3>
+                     <div class="flex flex-row pt-5">
+                        <div class="flex w-full text-xs">
+                           <span class="text-slate-500">Код: 648571</span>
+                           <span class="text-slate-500 pipe"> | </span>
+                           <span class="relative pl-2 stock">
+                              В наличност
+                              <div class="relative inline-block in-stock w-3 h-3"></div>
+                           </span>
+                        </div>
+                        <div class="flex justify-end w-1/2 cursor-pointer">
+                           <img class="inline-block share-icon" src="icons/share-icon.svg" alt="share icon">
+                           <span class="text-xs cursor-pointer">Сподели</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="flex flex-col">
+                     <div class="flex flex-row pt-12">
+                        <span class="text-black text-2xl md:text-3xl">5 026,30 лв</span>
+                        <span class="pl-6 text-slate-500 text-2xl md:text-3xl line-through">5 926,30 лв</span>
+                     </div>
+                     <span class="pt-4 text-xs saving">Спестяваш: 900 лв</span>
+                  </div>
+                  <!-- BOTTOM PART -->
+                  <div class="flex flex-col">
+                     <!-- ICONS -->
+                     <div class="flex flex-col md:flex-row pt-12">
+                        <div class="flex flex-row relative hover:fill-black ">
+                           <div class="fixed-size">
+                              <img class="transition-colors duration-300 hover:fill-black cursor-pointer" src="icons/shipping.svg" alt="free shipping icon">
+                           </div>
+                           <span class="pt-2 md:pt-0 pl-1 text-sm text-slate-400 cursor-pointer transition-colors duration-300 hover:text-black">Безплатна доставка</span>
+                        </div>
+                        <div class="flex flex-row md:pl-12">
+                           <div class="fixed-size">
+                              <img src="icons/return.svg" alt="return icon">
+                           </div>
+                           <span class="pt-2 md:pt-0 pl-1 text-sm text-slate-400 cursor-pointer transition-colors duration-300 hover:text-black">14 дни право на връщане</span>
+                        </div>
+                        <div class="flex flex-row md:pl-12">
+                           <div class="fixed-size">
+                              <img src="icons/warranty.svg" alt="warranty icon">
+                           </div>
+                           <span class="pt-2 md:pt-0 pl-1 text-sm text-slate-400 cursor-pointer transition-colors duration-300 hover:text-black">24 месеца гаранция</span>
+                        </div>
+                     </div>
+                     <!-- FIRST BUTTON -->
+                     <div class="pt-8">
+                        <div class="warranty-holder w-full p-3 bg-black cursor-pointer">
+                           <div class="warranty text-sm relative">
+                              <img class="inline-block relative check-icon" src="icons/check-icon.svg" alt="check icon">
+                              <span>Защити техниката си с удължена гаранция</span>
+                           </div>
+                           <div class="warranty text-sm underline">Виж повече</div>
+                        </div>
+                     </div>
+                     <!-- SECOND BUTTON -->
+                     <div class="flex flex-col md:flex-row justify-between">
+                        <div class="pt-4 w-full">
+                           <div class="h-14 p-4 bg-black cursor-pointer flex justify-center content-center">
+                              <div class="fixed-size">
+                                 <img class="block relative" src="icons/green-cart-icon.svg" alt="green cart icon">
+                              </div>
+                              <div class="text-sm text-center pl-2 transition-colors duration-300 hover:text-white cart">Добави в количка</div>
+                           </div>
+                        </div>
+                        <!-- THIRD BUTTON -->
+                        <div class="pt-4 w-full flex justify-end">
+                           <div class="p-1 bg-white border-solid border-yellow-400 border-2 box transition-colors duration-300 hover:bg-yellow-400">
+                              <div class="text-black text-sm text-center pt-1 cursor-pointer">Купи с кредит от <span class="text-red-500"> TBIBank </span> <br> на 12 вноски по 468,72 лв.</div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- ICONS -->
+                     <div class="flex flex-col md:flex-row pt-7">
+                        <div class="flex flex-row">
+                           <div class="fixed-size">
+                              <img src="icons/fav.svg" alt="favourite icon">
+                           </div>
+                           <span class="pl-1 text-sm text-slate-400 cursor-pointer transition-colors duration-300 hover:text-black">Добави в любими</span>
+                        </div>
+                        <div class="flex flex-row md:pl-12">
+                           <div class="fixed-size">
+                              <img src="icons/compare.svg" alt="compare icon">
+                           </div>
+                           <span class="pt-2 md:pt-0 pl-1 text-sm text-slate-400 cursor-pointer transition-colors duration-300 hover:text-black">Сравни</span>
+                        </div>
+                        <div class="flex flex-row md:pl-12">
+                           <div class="fixed-size">
+                              <img src="icons/download.svg" alt="download icon">
+                           </div>
+                           <span class="pt-2 md:pt-0 pl-1 text-sm text-slate-400 cursor-pointer transition-colors duration-300 hover:text-black">Свали продуктов фиш</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- RIGHT SECTION END-->
+         </div>
+      </section>
+      <script src="slider.js"></script>
+   </body>
+</html>
