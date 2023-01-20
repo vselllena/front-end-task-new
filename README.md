@@ -1,6 +1,6 @@
 # fornt-end-task
 
-Used tailwind for the styling and added aditional custom classes whenever needed
+Used tailwind for the styling and added aditional custom classes whenever needed.
 
 ## Known issues for this project to have -
 
